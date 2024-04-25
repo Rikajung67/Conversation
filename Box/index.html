@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.6">
+<title>Conversation</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body onload="displayInitialConversation()">
+<div class="container" id="dialogBox">
+    <p id="userName"></p>
+    <p id="userText"></p>
+</div>
+<div class="char">
+    <img id="thetaImg" src="logo.png" alt="Theta" style="display: none;">
+    <img id="villagerImg" src="villager.png" alt="คุณลุง" style="display: none;">
+</div>
+<div class="actions">
+    <button type="button" id="nextButton" onclick="nextPage()">Next</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

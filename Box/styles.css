@@ -1,0 +1,74 @@
+@font-face {
+    font-family: KT;
+    src: url(/font/KhaoNiawThin.ttf);
+}
+  
+body {
+    font-family: KT;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url("./back.png");
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255);
+    background-position: bottom 0px left 0px;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    /* backdrop-filter: blur(1px); */
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+}
+
+.actions button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: hsl(36, 100%, 50%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 30px;
+}
+
+.container {
+    width: 500px; /* Adjust the width of the conversation box */
+    height: 300px; /* Set a fixed height for the conversation box */
+    max-width: 80%; /* Limit the maximum width to 80% of the viewport width */
+    max-height: 80%; /* Limit the maximum height to 80% of the viewport height */
+    overflow: hidden; /* Hide overflowing content */
+    padding: 20px; /* Add padding to the conversation box */
+    background-color: rgba(255, 255, 255, 0.9); /* Set background color with transparency */
+    position: absolute; /* Change position to absolute */
+    top: 75%; /* Position vertically at 50% from the top */
+    left: 50%; /* Position horizontally at 50% from the left */
+    transform: translate(-50%, -50%); /* Center the dialog box */
+    text-align: center; 
+    border-radius: 10px; 
+    z-index: 2; /* Ensure conversation box layer is above picture layer */
+    font-size: 190%;
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+}
+
+/* Adjustments for text size */
+.userName, .userText {
+    font-size: 24px; /* Increase the font size of the text */
+    margin-bottom: 10px; /* Add margin between the text */
+}
+
+.char {
+    position: absolute;
+    top: 55%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+}
+
+.char img {
+    width: 370px; /* Adjust the width of the character images */
+    height: auto; /* Automatically adjust height while maintaining aspect ratio */
+    margin: 10px;
+}
